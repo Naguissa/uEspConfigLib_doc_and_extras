@@ -106,7 +106,7 @@ Public Member Functions</h2></td></tr>
 <p >This library consist in 2 parts:</p>
 <p >One main library, <a class="el" href="classuEspConfigLib.html" title="The deffinitive ESP32 and ESP8266 configuration Arduino library, uEspConfigLib.">uEspConfigLib</a>, that manages configuration options, defaults, configuration site (HTML and JSON), configuration processing (from a POST of previous site) and configuration storage.</p>
 <p >One interface to manage different configuration storages.</p>
-<p >Currently storage classes are: SD-card, LittleFS, SPIFFS and none (values are lost after restart). </p>
+<p >Currently storage classes are: SD-card, LittleFS, SPIFFS, EEPROM and none (values are lost after restart). </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a1f254f8c03becfb98d3306582cc7d6c4" name="a1f254f8c03becfb98d3306582cc7d6c4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1f254f8c03becfb98d3306582cc7d6c4">&#9670;&nbsp;</a></span>closeFile()</h2>
@@ -134,7 +134,7 @@ Public Member Functions</h2></td></tr>
 <p>Closes current file. </p>
 <dl class="section return"><dt>Returns</dt><dd>False on error </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classuEspConfigLibFSLittlefs.html#ab974b1324330d2c68588ecce82f6b7c2">uEspConfigLibFSLittlefs</a>, <a class="el" href="classuEspConfigLibFSNone.html#ac36fe79259109a3067fdec08c34fb1fc">uEspConfigLibFSNone</a>, <a class="el" href="classuEspConfigLibFSSd.html#a1f0c5e341cecf66eb749bda73976e3fe">uEspConfigLibFSSd</a>, and <a class="el" href="classuEspConfigLibFSSpiffs.html#a5511bf3cd7121932977425a55fe2cd27">uEspConfigLibFSSpiffs</a>.</p>
+<p>Reimplemented in <a class="el" href="classuEspConfigLibFSEEPROM.html#aeb6b7d50295d03af8714a8930ec1aff7">uEspConfigLibFSEEPROM</a>, <a class="el" href="classuEspConfigLibFSLittlefs.html#ab974b1324330d2c68588ecce82f6b7c2">uEspConfigLibFSLittlefs</a>, <a class="el" href="classuEspConfigLibFSNone.html#ac36fe79259109a3067fdec08c34fb1fc">uEspConfigLibFSNone</a>, <a class="el" href="classuEspConfigLibFSSd.html#a1f0c5e341cecf66eb749bda73976e3fe">uEspConfigLibFSSd</a>, and <a class="el" href="classuEspConfigLibFSSpiffs.html#a5511bf3cd7121932977425a55fe2cd27">uEspConfigLibFSSpiffs</a>.</p>
 
 </div>
 </div>
@@ -164,7 +164,7 @@ Public Member Functions</h2></td></tr>
 <p>Opens the file for read. </p>
 <dl class="section return"><dt>Returns</dt><dd>False on error </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classuEspConfigLibFSLittlefs.html#a65795e83375157f103598394cc45927f">uEspConfigLibFSLittlefs</a>, <a class="el" href="classuEspConfigLibFSNone.html#aba8246d4b037d090fa1ac086e1a3b176">uEspConfigLibFSNone</a>, <a class="el" href="classuEspConfigLibFSSd.html#a1a2f60ec17e63e5fc9f04db22f609c5c">uEspConfigLibFSSd</a>, and <a class="el" href="classuEspConfigLibFSSpiffs.html#a84b84f619117ecdd72efb6f6f11b120f">uEspConfigLibFSSpiffs</a>.</p>
+<p>Reimplemented in <a class="el" href="classuEspConfigLibFSEEPROM.html#aff68a22308e346bb8d835f446801637c">uEspConfigLibFSEEPROM</a>, <a class="el" href="classuEspConfigLibFSLittlefs.html#a65795e83375157f103598394cc45927f">uEspConfigLibFSLittlefs</a>, <a class="el" href="classuEspConfigLibFSNone.html#aba8246d4b037d090fa1ac086e1a3b176">uEspConfigLibFSNone</a>, <a class="el" href="classuEspConfigLibFSSd.html#a1a2f60ec17e63e5fc9f04db22f609c5c">uEspConfigLibFSSd</a>, and <a class="el" href="classuEspConfigLibFSSpiffs.html#a84b84f619117ecdd72efb6f6f11b120f">uEspConfigLibFSSpiffs</a>.</p>
 
 </div>
 </div>
@@ -194,7 +194,7 @@ Public Member Functions</h2></td></tr>
 <p>Opens the file for write. </p>
 <dl class="section return"><dt>Returns</dt><dd>False on error </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classuEspConfigLibFSLittlefs.html#a2224d9ce7f740a679d8c67c7198d0f05">uEspConfigLibFSLittlefs</a>, <a class="el" href="classuEspConfigLibFSNone.html#afde2fe7e1ccb9738147694b51099aa42">uEspConfigLibFSNone</a>, <a class="el" href="classuEspConfigLibFSSd.html#a65de9f8a1f49c47d97b89c7b8024cc35">uEspConfigLibFSSd</a>, and <a class="el" href="classuEspConfigLibFSSpiffs.html#a367fab88374c5a02df66bf066b8137f9">uEspConfigLibFSSpiffs</a>.</p>
+<p>Reimplemented in <a class="el" href="classuEspConfigLibFSEEPROM.html#a99923206948f42ebb8643796f8c3cafa">uEspConfigLibFSEEPROM</a>, <a class="el" href="classuEspConfigLibFSLittlefs.html#a2224d9ce7f740a679d8c67c7198d0f05">uEspConfigLibFSLittlefs</a>, <a class="el" href="classuEspConfigLibFSNone.html#afde2fe7e1ccb9738147694b51099aa42">uEspConfigLibFSNone</a>, <a class="el" href="classuEspConfigLibFSSd.html#a65de9f8a1f49c47d97b89c7b8024cc35">uEspConfigLibFSSd</a>, and <a class="el" href="classuEspConfigLibFSSpiffs.html#a367fab88374c5a02df66bf066b8137f9">uEspConfigLibFSSpiffs</a>.</p>
 
 </div>
 </div>
@@ -231,7 +231,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>False on error </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classuEspConfigLibFSLittlefs.html#a316e37d3df9bf6b55c7e7a2e60c2325c">uEspConfigLibFSLittlefs</a>, <a class="el" href="classuEspConfigLibFSNone.html#a4e125630771b6a87ca1e111b32c383ab">uEspConfigLibFSNone</a>, <a class="el" href="classuEspConfigLibFSSd.html#a8962b04daa9c43ed672535d03d229b7f">uEspConfigLibFSSd</a>, and <a class="el" href="classuEspConfigLibFSSpiffs.html#aa4a5deceead9d64fab67872d6eb1dc80">uEspConfigLibFSSpiffs</a>.</p>
+<p>Reimplemented in <a class="el" href="classuEspConfigLibFSEEPROM.html#a3858b1970fc7f61d9f17b988ea165073">uEspConfigLibFSEEPROM</a>, <a class="el" href="classuEspConfigLibFSLittlefs.html#a316e37d3df9bf6b55c7e7a2e60c2325c">uEspConfigLibFSLittlefs</a>, <a class="el" href="classuEspConfigLibFSNone.html#a4e125630771b6a87ca1e111b32c383ab">uEspConfigLibFSNone</a>, <a class="el" href="classuEspConfigLibFSSd.html#a8962b04daa9c43ed672535d03d229b7f">uEspConfigLibFSSd</a>, and <a class="el" href="classuEspConfigLibFSSpiffs.html#aa4a5deceead9d64fab67872d6eb1dc80">uEspConfigLibFSSpiffs</a>.</p>
 
 </div>
 </div>
@@ -296,7 +296,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>False on error </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classuEspConfigLibFSLittlefs.html#a8eb3e63cecd466fc732a6cbaac5f6aa3">uEspConfigLibFSLittlefs</a>, <a class="el" href="classuEspConfigLibFSNone.html#aaeab294de61264d2485ad8a992e098a9">uEspConfigLibFSNone</a>, <a class="el" href="classuEspConfigLibFSSd.html#a46ab3fcd06775289cc8c431bef082ab8">uEspConfigLibFSSd</a>, and <a class="el" href="classuEspConfigLibFSSpiffs.html#a91f5ddc47fd5714cafe396e7b9c5b258">uEspConfigLibFSSpiffs</a>.</p>
+<p>Reimplemented in <a class="el" href="classuEspConfigLibFSEEPROM.html#a62b3a768705dcd357bc2302e7e3e5887">uEspConfigLibFSEEPROM</a>, <a class="el" href="classuEspConfigLibFSLittlefs.html#a8eb3e63cecd466fc732a6cbaac5f6aa3">uEspConfigLibFSLittlefs</a>, <a class="el" href="classuEspConfigLibFSNone.html#aaeab294de61264d2485ad8a992e098a9">uEspConfigLibFSNone</a>, <a class="el" href="classuEspConfigLibFSSd.html#a46ab3fcd06775289cc8c431bef082ab8">uEspConfigLibFSSd</a>, and <a class="el" href="classuEspConfigLibFSSpiffs.html#a91f5ddc47fd5714cafe396e7b9c5b258">uEspConfigLibFSSpiffs</a>.</p>
 
 </div>
 </div>
