@@ -112,9 +112,20 @@ Macros</h2></td></tr>
 <tr class="memitem:ad44f714f3c691307cf45d0a5a621c577"><td class="memItemLeft" align="right" valign="top"><a id="ad44f714f3c691307cf45d0a5a621c577" name="ad44f714f3c691307cf45d0a5a621c577"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>uEspConfigLib_WebServer</b>&#160;&#160;&#160;ESP8266WebServer</td></tr>
 <tr class="separator:ad44f714f3c691307cf45d0a5a621c577"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c681494e34658f97d664662cebadc09"><td class="memItemLeft" align="right" valign="top"><a id="a2c681494e34658f97d664662cebadc09" name="a2c681494e34658f97d664662cebadc09"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>uEspConfigLib_OPTION_NONE</b>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:a2c681494e34658f97d664662cebadc09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Regular field. <br /></td></tr>
+<tr class="separator:a2c681494e34658f97d664662cebadc09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92c73641b28bc7400d20268f776f7676"><td class="memItemLeft" align="right" valign="top"><a id="a92c73641b28bc7400d20268f776f7676" name="a92c73641b28bc7400d20268f776f7676"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>uEspConfigLib_OPTION_SCANNER</b>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:a92c73641b28bc7400d20268f776f7676"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds WiFi scanner window to select desired SSID. <br /></td></tr>
+<tr class="separator:a92c73641b28bc7400d20268f776f7676"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d199c89460feb5a54304a2a26282774"><td class="memItemLeft" align="right" valign="top"><a id="a2d199c89460feb5a54304a2a26282774" name="a2d199c89460feb5a54304a2a26282774"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>uEspConfigLib_free</b>(field)&#160;&#160;&#160;if (field != 0) { free(field); field = 0; }</td></tr>
 <tr class="separator:a2d199c89460feb5a54304a2a26282774"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ddffaa194e3a5e0aa9957f00bd35d69"><td class="memItemLeft" align="right" valign="top"><a id="a2ddffaa194e3a5e0aa9957f00bd35d69" name="a2ddffaa194e3a5e0aa9957f00bd35d69"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>uEspConfigLib_malloc</b>(value)&#160;&#160;&#160;(char *) malloc(sizeof(char) * (strlen(value) + 1))</td></tr>
+<tr class="separator:a2ddffaa194e3a5e0aa9957f00bd35d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af13f7783954d13a6589aa4bcef55cd52"><td class="memItemLeft" align="right" valign="top"><a id="af13f7783954d13a6589aa4bcef55cd52" name="af13f7783954d13a6589aa4bcef55cd52"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>uEspConfigLib_WebServer_sendContent</b>(data)&#160;&#160;&#160;if (*data != 0) { server-&gt;sendContent(data); }</td></tr>
 <tr class="separator:af13f7783954d13a6589aa4bcef55cd52"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,7 +136,7 @@ Macros</h2></td></tr>
 <dl class="section see"><dt>See also</dt><dd><a href="https://github.com/Naguissa/uEspConfigLib">https://github.com/Naguissa/uEspConfigLib</a> </dd>
 <dd>
 <a href="#" onclick="location.href='mai'+'lto:'+'nag'+'ui'+'ssa'+'@f'+'oro'+'el'+'ect'+'ro'+'.ne'+'t'; return false;">naguissa@foroelectro.net</a> </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>1.1.0 </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.2.0 </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -80,9 +80,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afd7226f4a358979042b07027694f4daa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classuEspConfigLib.html#afd7226f4a358979042b07027694f4daa">uEspConfigLib</a> (<a class="el" href="classuEspConfigLibFSInterface.html">uEspConfigLibFSInterface</a> *)</td></tr>
 <tr class="memdesc:afd7226f4a358979042b07027694f4daa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classuEspConfigLib.html#afd7226f4a358979042b07027694f4daa">More...</a><br /></td></tr>
 <tr class="separator:afd7226f4a358979042b07027694f4daa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a865014747c6c8088c45f0e98b6e26e83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classuEspConfigLib.html#a865014747c6c8088c45f0e98b6e26e83">addOption</a> (const char *, const char *, const char *)</td></tr>
-<tr class="memdesc:a865014747c6c8088c45f0e98b6e26e83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a configuration option.  <a href="classuEspConfigLib.html#a865014747c6c8088c45f0e98b6e26e83">More...</a><br /></td></tr>
-<tr class="separator:a865014747c6c8088c45f0e98b6e26e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf00358b23bc5489d3e5888521f44033"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classuEspConfigLib.html#abf00358b23bc5489d3e5888521f44033">addOption</a> (const char *, const char *, const char *, const uint8_t=<a class="el" href="uEspConfigLib_8h.html#a2c681494e34658f97d664662cebadc09">uEspConfigLib_OPTION_NONE</a>)</td></tr>
+<tr class="memdesc:abf00358b23bc5489d3e5888521f44033"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a configuration option.  <a href="classuEspConfigLib.html#abf00358b23bc5489d3e5888521f44033">More...</a><br /></td></tr>
+<tr class="separator:abf00358b23bc5489d3e5888521f44033"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57ea9401db9020da4911ee4671e1ca40"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classuEspConfigLib.html#a57ea9401db9020da4911ee4671e1ca40">set</a> (const char *, const char *)</td></tr>
 <tr class="memdesc:a57ea9401db9020da4911ee4671e1ca40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes a configuration option current value.  <a href="classuEspConfigLib.html#a57ea9401db9020da4911ee4671e1ca40">More...</a><br /></td></tr>
 <tr class="separator:a57ea9401db9020da4911ee4671e1ca40"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,8 +142,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a865014747c6c8088c45f0e98b6e26e83" name="a865014747c6c8088c45f0e98b6e26e83"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a865014747c6c8088c45f0e98b6e26e83">&#9670;&nbsp;</a></span>addOption()</h2>
+<a id="abf00358b23bc5489d3e5888521f44033" name="abf00358b23bc5489d3e5888521f44033"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf00358b23bc5489d3e5888521f44033">&#9670;&nbsp;</a></span>addOption()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -164,7 +164,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>defaultValue</em>&#160;</td>
+          <td class="paramname"><em>defaultValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t&#160;</td>
+          <td class="paramname"><em>option</em> = <code><a class="el" href="uEspConfigLib_8h.html#a2c681494e34658f97d664662cebadc09">uEspConfigLib_OPTION_NONE</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -177,6 +183,10 @@ Public Member Functions</h2></td></tr>
 <p>Defines a configuration option. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">name</td><td>Name of configuration option </td></tr>
+    <tr><td class="paramname">description</td><td>Description of the configuration option </td></tr>
+    <tr><td class="paramname">defaultValue</td><td>Default value of the configuration option </td></tr>
+    <tr><td class="paramname">option</td><td>Optional. Special option, uEspConfigLib_OPTION_NONE by default</td></tr>
     <tr><td class="paramname">name</td><td>Name of configuration option </td></tr>
     <tr><td class="paramname">description</td><td>Description of the configuration option </td></tr>
     <tr><td class="paramname">defaultValue</td><td>Default value of the configuration option </td></tr>
